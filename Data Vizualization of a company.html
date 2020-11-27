@@ -1,0 +1,609 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+body {
+	background-color: #ffffff;
+	font-family: Calibri, Myriad;
+}
+
+#main {
+	width: 780px;
+	padding: 20px;
+	margin: auto;
+}
+
+table.visualization {
+	margin: 30px 0;
+	width: 600px;
+    
+	border-collapse: collapse;
+	border: 1px solid #fff; 
+	border-style: hidden;
+}
+
+table.visualization caption {
+	background-color: #2f5370;
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: .3em;
+}
+
+table.visualization thead th {
+	padding: 8px;
+	background-color: #5088b5;
+	font-size: large;
+}
+
+table.visualization thead th#thDay {
+	width: 40%;	
+}
+
+table.visualization thead th#thRegular, table.visualization thead th#thOvertime, table.visualization thead th#thTotal {
+	width: 20%;
+}
+
+table.visualization th, table.visualization td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #568CB8 #ccc;
+}
+
+table.visualization td {
+	text-align: center;
+}
+
+table.visualization tbody th {
+	text-align: center;
+	font-weight: normal;
+}
+
+table.visualization tr.odd {
+	background-color: #ffffff;
+}
+
+table.visualization tr.even {
+	background-color: #dcf1f7;
+}
+
+</style>
+<title>Data vizualization of customers</title>
+</head>
+
+<body>
+<div align="center">
+<table class="visualization", align="center" >
+	<caption>Data vizualization of customers</caption>
+	<thead>
+		<tr class>
+
+			<th id="thnumber">Number</th>
+            <th id="thID">Order_ID</th>
+			<th id="thdate">Order_Date</th>
+			<th id="thname">Customer_Name</th>
+			<th id="themail">Customer_Email</th>
+            <th id="thphn">Customer_Phone</th>
+            <th id="thdis">District</th>
+            <th id="thcity">City</th>
+            <th id="thshipadd">Shipping_Address</th>
+            <th id="thnofpro">Number_Of_Products</th>
+            <th id="thordervalue">Order_Value</th>
+            <th id="thCoupon">Coupon_Used</th>
+            <th id="thdisvalue">Discount_Value</th>
+            <th id="thtscore">Trust_Score</th>
+            <th id="thstatus">Status</th>
+            <th id="thDdate">Delivery_Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="odd">
+			<th>1</th>
+			<td>ORD268212</td>
+			<td>8/4/2020 15:58</td>
+			<td>Kacy Martlew</td>
+            <th>kmartlewe@unblog.fr</th>
+            <th>718-617-0131</th>
+            <th>New York</th>
+            <th>Brooklyn</th>
+            <th>7111 Thompson Parkway</th>
+            <th>3</th>
+            <th>7500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.95</th>
+            <th>Cancelled</th>
+            <th>N\A</th>
+
+		</tr>
+	<tr class="even">
+    <th>2</th>
+			<td>ORD043679</td>
+			<td>8/5/2020 12:25</td>
+			<td>Rina Costerd</td>
+            <th>rcosterd0@netlog.com</th>
+            <th>214-391-5720</th>
+            <th>Texas</th>
+            <th>Dallas</th>
+            <th>20 Sunfield Parkway</th>
+            <th>5</th>
+            <th>6000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.73</th>
+            <th>Shipped</th>
+            <th>N\A</th>
+            </tr>
+
+    <tr class="odd">
+			<th>3</th>
+			<td>ORD599767</td>
+			<td>8/7/2020 14:21</td>
+			<td>Patty Curgenuer</td>
+            <th>pcurgenuerk@ucla.edu</th>
+            <th>909-590-8965</th>
+            <th>California</th>
+            <th>San Bernardino</th>
+            <th>09686 Dahle Street</th>
+            <th>3</th>
+            <th>4500</th>
+            <th>VOUCHER30</th>
+            <th>1350</th>
+            <th>0.96</th>
+            <th>Confirmed</th>
+            <th>N\A</th>
+
+		</tr>
+<tr class="even">
+    <th>4</th>
+			<td>ORD159465</td>
+			<td>8/7/2020 19:28</td>
+			<td>Rachele Vampouille</td>
+            <th>rvampouille5@nps.gov</th>
+            <th>757-424-0653</th>
+            <th>Virginia</th>
+            <th>Norfolk</th>
+            <th>1619 American Ash Drive</th>
+            <th>2</th>
+            <th>4000</th>
+            <th>DISCOUNT20</th>
+            <th>800</th>
+            <th>0.34</th>
+            <th>Returned</th>
+            <th>9/20/2020</th>
+            </tr>
+
+<tr class="odd">
+			<th>5</th>
+			<td>ORD538806</td>
+			<td>8/8/2020 13:26</td>
+			<td>Nickolaus Wearden</td>
+            <th>nwearden3@wordpress.org</th>
+            <th>862-174-7118</th>
+            <th>New Jersey</th>
+            <th>Paterson</th>
+            <th>4 Chive Place</th>
+            <th>4</th>
+            <th>1000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.78</th>
+            <th>Cancelled</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>6</th>
+			<td>ORD099928</td>
+			<td>8/9/2020 3:53</td>
+			<td>Libbie Kildahl</td>
+            <th>lkildahlg@opensource.org</th>
+            <th>414-736-8473</th>
+            <th>Wisconsin</th>
+            <th>Milwaukee</th>
+            <th>9176 Sutherland Way</th>
+            <th>4</th>
+            <th>4500</th>
+            <th>EID30</th>
+            <th>1350</th>
+            <th>0.87</th>
+            <th>Confirmed</th>
+            <th>N\A</th>
+            </tr>
+
+<tr class="odd">
+			<th>7</th>
+			<td>ORD538806</td>
+			<td>8/8/2020 13:26</td>
+			<td>Nickolaus Wearden</td>
+            <th>nwearden3@wordpress.org</th>
+            <th>862-174-7118</th>
+            <th>New Jersey</th>
+            <th>Paterson</th>
+            <th>4 Chive Place</th>
+            <th>4</th>
+            <th>1000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.78</th>
+            <th>Cancelled</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>8</th>
+			<td>ORD735250</td>
+			<td>8/11/2020 8:30</td>
+			<td>Delcina Mackelworth</td>
+            <th>dmackelworthl@abc.net.au</th>
+            <th>305-858-0285</th>
+            <th>Florida</th>
+            <th>Hialeah</th>
+            <th>5 Shelley Circle</th>
+            <th>1</th>
+            <th>1500</th>
+            <th>EID30</th>
+            <th>450</th>
+            <th>0.94</th>
+            <th>Confirmed</th>
+            <th>N\A</th>
+            </tr>
+
+<tr class="odd">
+			<th>9</th>
+			<td>ORD939217</td>
+			<td>8/11/2020 19:34</td>
+			<td>Babita Pickavant</td>
+            <th>bpickavantc@sciencedirect.com</th>
+            <th>301-454-6166</th>
+            <th>Maryland</th>
+            <th>Silver Spring</th>
+            <th>46 Stephen Drive</th>
+            <th>7</th>
+            <th>3000</th>
+            <th>VOUCHER30</th>
+            <th>900</th>
+            <th>0.76</th>
+            <th>Processing</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>10</th>
+			<td>ORD302920</td>
+			<td>8/13/2020 6:02</td>
+			<td>Kare Pickrill</td>
+            <th>kpickrill2@bing.com</th>
+            <th>321-918-9372</th>
+            <th>Florida</th>
+            <th>Orlando</th>
+            <th>03672 Rusk Crossing</th>
+            <th>5</th>
+            <th>4500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.58</th>
+            <th>Delivered</th>
+            <th>9/4/2020</th>
+            </tr>
+
+<tr class="odd">
+			<th>11</th>
+			<td>ORD182564</td>
+			<td>8/13/2020 6:52</td>
+			<td>Heloise Ybarra</td>
+            <th>hybarraj@github.io</th>
+            <th>410-879-9176</th>
+            <th>Maryland</th>
+            <th>Baltimore</th>
+            <th>74 Johnson Circle</th>
+            <th>7</th>
+            <th>7000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.15</th>
+            <th>Shipped</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>12</th>
+			<td>ORD001603</td>
+			<td>8/13/2020 12:03</td>
+			<td>Nancee Attfield</td>
+            <th>nattfield4@360.cn</th>
+            <th>806-870-6367</th>
+            <th>Texas</th>
+            <th>Amarillo</th>
+            <th>5 Acker Pass</th>
+            <th>7</th>
+            <th>2000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.86</th>
+            <th>Processing</th>
+            <th>N\A</th>
+            </tr>
+
+<tr class="odd">
+			<th>13</th>
+			<td>ORD335783</td>
+			<td>8/16/2020 23:22</td>
+			<td>Arnold Normand</td>
+            <th>anormand8@jugem.jp</th>
+            <th>334-326-1594</th>
+            <th>Alabama</th>
+            <th>Montgomery</th>
+            <th>9322 Northwestern Alley</th>
+            <th>6</th>
+            <th>2000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.94</th>
+            <th>Processing</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>14</th>
+			<td>ORD849838</td>
+			<td>8/17/2020 11:27</td>
+			<td>Eugenia Kemery</td>
+            <th>ekemeryo@addtoany.com</th>
+            <th>425-470-8133</th>
+            <th>Washington</th>
+            <th>Seattle</th>
+            <th>799 Manufacturers Lane</th>
+            <th>1</th>
+            <th>7500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.3</th>
+            <th>Confirmed</th>
+            <th>N\A</th>
+            </tr>
+<tr class="odd">
+			<th>15</th>
+			<td>ORD208895</td>
+			<td>8/19/2020 7:49</td>
+			<td>Herrick Greschik</td>
+            <th>hgreschikb@friendfeed.com</th>
+            <th>310-811-5113</th>
+            <th>California</th>
+            <th>Santa Monica</th>
+            <th>1141 Grayhawk Hill</th>
+            <th>4</th>
+            <th>4000</th>
+            <th>VOUCHER20</th>
+            <th>800</th>
+            <th>0.9</th>
+            <th>Shipped</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>16</th>
+			<td>ORD307445</td>
+			<td>8/19/2020 21:48</td>
+			<td>Kim Benettini</td>
+            <th>kbenettinii@1688.com</th>
+            <th>563-942-6390</th>
+            <th>Iowa</th>
+            <th>Davenport</th>
+            <th>35508 Armistice Parkway</th>
+            <th>6</th>
+            <th>6500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.45</th>
+            <th>Returned</th>
+            <th>9/20/2020</th>
+            </tr>
+
+<tr class="odd">
+			<th>17</th>
+			<td>ORD702774</td>
+			<td>8/20/2020 4:44</td>
+			<td>Lynnea Lamy</td>
+            <th>llamy6@artisteer.com</th>
+            <th>915-206-5138</th>
+            <th>Texas</th>
+            <th>El Paso</th>
+            <th>6759 Chinook Road</th>
+            <th>4</th>
+            <th>5500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.3</th>
+            <th>Delivered</th>
+            <th>9/12/2020</th>
+
+		</tr>
+
+<tr class="even">
+    <th>18</th>
+			<td>ORD294070</td>
+			<td>8/20/2020 13:31</td>
+			<td>Doralynn Phelipeau</td>
+            <th>dphelipeauf@bloglines.com</th>
+            <th>208-310-9397</th>
+            <th>Oregon</th>
+            <th>Portland</th>
+            <th>74512 Blackbird Parkway</th>
+            <th>5</th>
+            <th>5500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.53</th>
+            <th>Processing</th>
+            <th>N\A</th>
+            </tr>
+<tr class="odd">
+			<th>19</th>
+			<td>ORD978596</td>
+			<td>8/20/2020 23:30</td>
+			<td>Anni Isenor</td>
+            <th>aisenora@google.fr</th>
+            <th>505-198-7511</th>
+            <th>New Mexico</th>
+            <th>Albuquerque</th>
+            <th>6650 Elka Way</th>
+            <th>6</th>
+            <th>1500</th>
+            <th>DISCOUNT20</th>
+            <th>300</th>
+            <th>0.32</th>
+            <th>Processing</th>
+            <th>N\A</th>
+
+		</tr>
+
+        <tr class="even">
+    <th>20</th>
+			<td>ORD146650</td>
+			<td>8/21/2020 12:30</td>
+			<td>Lura Limbert</td>
+            <th>llimberth@booking.com</th>
+            <th>312-711-2749</th>
+            <th>Illinois</th>
+            <th>Chicago</th>
+            <th>1511 Arapahoe Avenue</th>
+            <th>2</th>
+            <th>4000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.96</th>
+            <th>Confirmed</th>
+            <th>N\A</th>
+            </tr>
+
+<tr class="odd">
+			<th>21</th>
+			<td>ORD264749</td>
+			<td>8/23/2020 12:16</td>
+			<td>Kiri Youle</td>
+            <th>kyoule9@buzzfeed.com</th>
+            <th>801-830-8051</th>
+            <th>Utah</th>
+            <th>Salt Lake City</th>
+            <th>776 Armistice Point</th>
+            <th>2</th>
+            <th>3000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.09</th>
+            <th>Returned</th>
+            <th>9/5/2020</th>
+
+		</tr>
+<tr class="even">
+    <th>22</th>
+			<td>ORD823453</td>
+			<td>8/24/2020 19:14</td>
+			<td>Clerissa Treleven</td>
+            <th>ctreleven1@admin.ch</th>
+            <th>314-205-5003</th>
+            <th>Missouri</th>
+            <th>Saint Louis</th>
+            <th>11861 Carioca Avenue</th>
+            <th>6</th>
+            <th>4000</th>
+            <th></th>
+            <th>0</th>
+            <th>0.01</th>
+            <th>Returned</th>
+            <th>9/6/2020</th>
+            </tr>
+<tr class="odd">
+			<th>23</th>
+			<td>ORD322787</td>
+			<td>8/25/2020 15:43</td>
+			<td>Tonia Clamp</td>
+            <th>tclamp7@barnesandnoble.com</th>
+            <th>850-337-9394</th>
+            <th>Florida</th>
+            <th>Tallahassee</th>
+            <th>62092 Eagan Junction</th>
+            <th>3</th>
+            <th>1500</th>
+            <th>EID30</th>
+            <th>450</th>
+            <th>0.68</th>
+            <th>Shipped</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>24</th>
+			<td>ORD584457</td>
+			<td>8/26/2020 0:41</td>
+			<td>Ingmar Robley</td>
+            <th>irobleym@google.com</th>
+            <th>859-289-1023</th>
+            <th>Kentucky</th>
+            <th>Lexington</th>
+            <th>493 Oneill Plaza</th>
+            <th>6</th>
+            <th>3500</th>
+            <th>VOUCHER20</th>
+            <th>700</th>
+            <th>0.28</th>
+            <th>Processing</th>
+            <th>N\A</th>
+            </tr>
+
+<tr class="odd">
+			<th>25</th>
+			<td>ORD608826</td>
+			<td>8/27/2020 5:06</td>
+			<td>Sampson Verbruggen</td>
+            <th>sverbruggend@reference.com</th>
+            <th>763-754-3825</th>
+            <th>Minnesota</th>
+            <th>Maple Plain</th>
+            <th>3476 Kings Lane</th>
+            <th>7</th>
+            <th>7500</th>
+            <th></th>
+            <th>0</th>
+            <th>0.4</th>
+            <th>Processing</th>
+            <th>N\A</th>
+
+		</tr>
+
+<tr class="even">
+    <th>26</th>
+			<td>ORD584458</td>
+			<td>8/26/2020 0:41</td>
+			<td>Ingmar Kildahl</td>
+            <th>irgmarkildahi@google.com</th>
+            <th>859-289-1025</th>
+            <th>Texas</th>
+            <th>Dallas</th>
+            <th>20 Sunfield Parkway</th>
+            <th>6</th>
+            <th>9000</th>
+            <th>VOUCHER40</th>
+            <th>5400</th>
+            <th>0.50</th>
+            <th>Processing</th>
+            <th>N\A</th>
+            </tr>
+
+        </tbody>
+
+
+</table>
+</div>
+</body>
+</html>
